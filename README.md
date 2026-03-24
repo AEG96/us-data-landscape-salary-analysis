@@ -1,17 +1,32 @@
 # 📊 US Data Career Landscape: Strategic Salary Analysis (2026)
 
-This project provides a data-driven deep dive into the US data professional market. By implementing **weighted average calculations** to account for sample size variations across remote, hybrid, and on-site roles, this analysis eliminates statistical bias and reveals the true market value of various data positions.
+This project provides a data-driven deep dive into the US data professional market. By implementing **weighted average calculations**, this analysis eliminates statistical bias and reveals the true market value of various data positions.
 
 ---
 
-### 🚀 Phase 1: Data Analyst Specializations
-Our initial analysis focuses on the "Data Analyst" family, highlighting how specific domains impact compensation:
-
-* **The Specialization Premium:** While a standard Data Analyst earns a robust weighted average of **$116,657**, there is a clear financial incentive for product-focused roles. A **"Product Data Analyst"** averages **$120,000**, notably outperforming even "Lead Data Analyst" ($108,333) positions. This suggests that in the US market, deep product insights are often valued higher than traditional hierarchical leadership.
-* **The Individual Contributor Ceiling:** The **"Principal Data Analyst"** role represents the pinnacle of this track, commanding an impressive **$170,000** average, proving that staying on the technical path can be just as lucrative as moving into management.
-* **The BI Gap:** Transitioning from a traditional **"BI Data Analyst"** ($82,710) to a more generalized or product-oriented Data Analyst role can result in a salary increase of nearly **40%**.
+### 💡 Key Insights: The "Data Analyst" Market
+* **The Specialization Premium:** Transitioning from a traditional **"BI Data Analyst"** to a product-centric role can lead to a **40% salary increase**.
+* **Product > Leadership:** In the US, a **"Product Data Analyst"** ($120,000) earns more than a **"Lead Data Analyst"** ($108,333), highlighting the market's high valuation of product-specific expertise over traditional management.
+* **The Tech Ceiling:** The **"Principal Data Analyst"** remains the highest-paid individual contributor role, averaging **$170,000**.
 
 ---
 
-### 💡 Methodology & Technical Note
-> **SQL Strategy:** Analysis conducted using **PostgreSQL**. To ensure accuracy, I utilized **Common Table Expressions (CTEs)** and weighted averages: `SUM(avg_salary * count) / SUM(count)`. This prevents smaller sub-groups (e.g., a single high-paid remote worker) from skewing the overall departmental averages.
+<details>
+  <summary><b>📈 View Detailed Salary Table: Data Analyst Specializations</b></summary>
+
+| Job Title | Weighted Avg Salary (USD) | Rank |
+| :--- | :---: | :---: |
+| **Principal Data Analyst** | **$170,000** | 🏆 1 |
+| Product Data Analyst | $120,000 | 2 |
+| Data Analyst | $116,657 | 3 |
+| Lead Data Analyst | $108,333 | 4 |
+| Business Data Analyst | $104,714 | 5 |
+| Financial Data Analyst | $101,667 | 6 |
+| BI Data Analyst | $82,710 | 7 |
+
+</details>
+
+---
+
+### 🛠️ Methodology & Technical Note
+> **SQL Strategy:** Conducted using **PostgreSQL**. To ensure accuracy, I utilized **Common Table Expressions (CTEs)** and weighted averages: `SUM(avg_salary * count) / SUM(count)`. This prevents small, high-paid sub-groups from skewing the overall results, ensuring a true representation of the market.
