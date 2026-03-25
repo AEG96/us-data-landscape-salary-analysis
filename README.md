@@ -30,7 +30,5 @@ This project provides a data-driven deep dive into the US data professional mark
 
 ### 🛠️ Methodology & Technical Note
 > **SQL Strategy:** Conducted using **PostgreSQL**. To ensure accuracy, I utilized **Common Table Expressions (CTEs)** and weighted averages: `SUM(avg_salary * count) / SUM(count)`. This prevents small, high-paid sub-groups from skewing the overall results, ensuring a true representation of the market.
-> ### 📂 Data Source & Transparency
-* **Original Dataset:** The data used in this analysis is sourced from [Dataset Adı Buraya - Örn: ai-jobs.net Salaries Dataset]. 
-* **Data Verification:** To ensure the integrity of the results, the raw data was filtered for the "US" market and "Data Analyst" related titles only.
-* **Logic Proof:** You can audit the exact SQL logic used for these calculations in the [us_data_analyst_analysis.sql](./us_data_analyst_analysis.sql) file.
+### 📂 Data Source & Transparency
+* **Original Dataset:** The raw data used for this analysis was sourced from [Veriyi Aldığın Sitenin veya Kurumun Adı](Buraya Sitenin Linkini Yapıştır).
