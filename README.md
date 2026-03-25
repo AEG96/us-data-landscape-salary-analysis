@@ -31,4 +31,4 @@ This project provides a data-driven deep dive into the US data professional mark
 ### 🛠️ Methodology & Technical Note
 > **SQL Strategy:** Conducted using **PostgreSQL**. To ensure accuracy, I utilized **Common Table Expressions (CTEs)** and weighted averages: `SUM(avg_salary * count) / SUM(count)`. This prevents small, high-paid sub-groups from skewing the overall results, ensuring a true representation of the market.
 ### 📂 Data Source & Transparency
-* **Original Dataset:** The raw data used for this analysis was sourced from [Veriyi Aldığın Sitenin veya Kurumun Adı](Buraya Sitenin Linkini Yapıştır).
+* **Original Dataset:** The raw data used for this analysis was sourced from the [Data Science Salaries 2023 Dataset on Kaggle](https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023).
